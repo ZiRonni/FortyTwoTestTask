@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Page Not Found{%endblock%}
+
+{% block content %}
+<h1>42 Coffee Cups Test Assignment</h1>
+{%for content_info in info %}
+    <div style="width:400px; float:left;">
+    <p>Name: {{content_info.name}}</p>
+    <p>Last name</p>
+    <p>Date of birth</p>
+    <p>Bio:</p>
+    </div>
+    <div style="width:400px; float:left;">
+    <p>Contacts</p>
+    <p>Email: email</p>
+    <p>Jabber: JID</p>
+    <p>Skype:</p>
+    <p>Other contacts:</p>
+    </div>
+{%endfor%}
+{% endblock %}
